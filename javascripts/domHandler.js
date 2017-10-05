@@ -14,7 +14,11 @@ const createDomString = (catz) => {
 		catString +=         `<h3>${cat.name}</h3>`;
 		catString +=         `<p> Color: ${cat.color}</p>`;
 		catString +=         `<p> Skills: ${cat.specialSkill}</p>`;
-		catString +=         `<p class="disabled-cat"> Toes: ${cat.numberOfToes}</p>`;
+		if(cat.numberOfToes <= 10){
+	    catString +=  `<p class="disabled-cat"> Toes: ${cat.numberOfToes}</p>`;
+		} else {
+	    catString +=  `<p> Toes: ${cat.numberOfToes}</p>`;
+		}
 		catString +=       `</div>`;
 		catString +=     `</div>`;
 		catString +=   `</div>`;

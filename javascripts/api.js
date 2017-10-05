@@ -10,7 +10,7 @@ const dom = require('./domHandler');
 const requestSomeCats = (usersCatsNum) => {
 	let catsData = {};
 	$.ajax('https://random-dogs-api.herokuapp.com/cats/' + usersCatsNum).done((data) => {
-		catsData = data.catz;
+		catsData = data.cats;
 		dom.createDomString(catsData);
 	}).fail((error) => {
 		console.log(error);

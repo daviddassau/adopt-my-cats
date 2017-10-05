@@ -12,6 +12,8 @@ $('#enterButton').click(() => {
 		} else {
 			// Fire off ajax request w/the variable as the number of cats
 			apiAjaxRequest.requestSomeCats(userInput);
+			$('.hideFormGroup').hide();
+			$('.hideCatDiv').show();
 		}
 	} else {
 		// Prompt user to enter a number and not a string
@@ -29,6 +31,8 @@ $('#searchText').keypress((e) => {
 			} else {
 				// Fire off ajax request w/the variable as the number of cats
 				apiAjaxRequest.requestSomeCats(userInput);
+				$('.hideFormGroup').hide();
+				$('.hideCatDiv').show();
 			}
 		} else {
 			// Prompt user to enter a number and not a string
@@ -37,4 +41,17 @@ $('#searchText').keypress((e) => {
 	}
 });
 
+$('#disabledCatButton').click(() => {
+	$('.disabled-cat').closest('.cat-card').hide();
+});
+
 module.exports = {};
+
+
+
+
+
+
+
+
+
