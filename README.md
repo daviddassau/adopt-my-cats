@@ -35,3 +35,8 @@ I'm the owner of a cat adoption website. I need a website that allows me to load
 - jQuery (DOM methods, AJAX)
 - Linting
 - Bootstrap
+
+## Final Result
+![](1.png)
+![](2.png)
+![](3.png)
