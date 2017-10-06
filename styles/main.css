@@ -1,4 +1,22 @@
+body {
+	background: url('http://www.wujinshike.com/data/wallpapers/92/WDF_1359172.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.container {
+	background: rgba(255,255,255,.7);
+	margin-top: 20px;
+	min-height: 575px;
+}
+
 .hideCatDiv {
 	display: none;
 	padding-bottom: 20px;
 }
+
+/*.cat-card {
+	background-color: #666666;
+}*/
